@@ -12,9 +12,11 @@ class CoursesAPI {
         }
     }
 
+    //unsure if this should be referring to the holes array for put, but it writes to the list like this
+    
     put = async (course) => {
         try {
-            const resp = await fetch(`${dg_courses_endpoint}/${course.id}`, {
+            const resp = await fetch(`${dg_courses_endpoint}/${course._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
