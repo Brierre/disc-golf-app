@@ -2,4 +2,219 @@
   text-align: center;
 }
 
+html {
+  background-color: #89b376;
+}
 
+.courses-title {
+  color: navy;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.course-list {
+  color: navy;
+  margin: 2em;
+}
+
+.course-info-name {
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 10px 0px 0px 10px;
+}
+
+.course-info {
+  margin: 0px 0px 0px 40px;
+  font-style: italic;
+}
+
+.add-hole {
+  margin-top: 10px;
+  padding: 0px 0px 0px 10px;
+}
+
+#dg-nav {
+  border: solid 2px navy;
+  padding: 10px;
+  min-height: 5vh;
+  background: linear-gradient(45deg, #89b376, #66815b);
+}
+
+#links-and-dd {
+  justify-content: end;
+}
+
+#brand-img1 {
+  z-index: inherit;
+}
+
+#circular-nav-button {
+  position: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+#circular-nav-button:hover {
+  color: #89b376;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.menu {
+  margin: auto;
+}
+
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform-origin: 60px;
+  transform: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(80px);
+  padding: 9px;
+  margin-left: 20px;
+}
+
+.menu.active li {
+  transform: rotate(calc(360deg / 9 * var(--i))) translateX(80px);
+}
+
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: navy;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -9 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: white;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.menu li a:hover {
+  color: #89b376;
+}
+
+.menu.active .toggle {
+  transform: rotate(315deg);
+}
+
+.dropdown-item {
+  background-color: #89b376;
+}
+
+.dropdown-item:hover {
+  background-color: #66815b;
+  color: white;
+}
+
+.disabled {
+  text-decoration: line-through;
+}
+
+.course {
+  border: 2px solid #66815b;
+  border-radius: 3px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.glow-container {
+  display: inline-block; /* or use block or flex, depending on your layout needs */
+  position: relative;
+}
+
+/* Glowing effect styles */
+.glow-container .glow-on-hover {
+  width: 125px;
+  height: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #89b376;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.glow-container .glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 3px;
+  padding-left: 5px;
+  color: #66815b;
+}
+
+.glow-container .glow-on-hover:active {
+  color: #1e271a;
+}
+
+.glow-container .glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-container .glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-container .glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: #89b376;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.holes-list {
+  list-style-type: none;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.frisbee {
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
