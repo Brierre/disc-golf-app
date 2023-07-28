@@ -77,10 +77,11 @@ function CourseCommentsForm({ commentList, courseId, addComment }) {
 
     return (
         <>
-            <Button className='mt-4 mb-3 outline-success btn-view-comments' variant='outline-success' onClick={handleShow}>
-                View or Leave Comments
-            </Button>
-
+            <div className="glow-container">
+                <Button className='mt-4 mb-3 form-elements glow-on-hover btn-view-comments' variant='outline-success' onClick={handleShow}>
+                    View or Leave Comments
+                </Button>
+            </div>
             <Modal
                 size='lg'
                 show={show}
@@ -90,16 +91,16 @@ function CourseCommentsForm({ commentList, courseId, addComment }) {
                 scrollable={true}
                 data-bs-theme='light'>
                 <Modal.Header
-                    className='bg-light border border-0 text-dark'
+                    className='bg-light border border-0 form-elements'
                     closeVariant={'white'}
                     closeButton>
                     <Modal.Title>Leave a comment</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className='bg-light text-dark'>
+                <Modal.Body className='bg-light form-elements'>
                     <Form className='border-bottom'>
                         <label htmlFor='author-name'>
                             {!validName ? (
-                                <span className='fst-italic fw-light text-success'>
+                                <span className='fst-italic fw-light input-form-elements'>
                                     {' '}
                                     Enter your name.
                                 </span>
@@ -113,13 +114,13 @@ function CourseCommentsForm({ commentList, courseId, addComment }) {
                             type='text'
                             placeholder='Your name'
                             autoFocus
-                            className='bg-light text-dark form-control'
+                            className='bg-light input-form-elements form-control'
                             value={newAuthor}
                             onChange={handleAuthorChange}
                             required/>
                         <label htmlFor='new-comment'>
                             {!validComment ? (
-                                <span className='fst-italic fw-light text-success'>
+                                <span className='fst-italic fw-light input-form-elements'>
                                     {' '}
                                     Enter comment.
                                 </span>
@@ -132,29 +133,33 @@ function CourseCommentsForm({ commentList, courseId, addComment }) {
                             id='new-comment'
                             placeholder='Your comment'
                             rows='3'
-                            className='bg-light text-dark form-control'
+                            className='bg-light input-form-elements form-control'
                             value={newCommentText}
                             onChange={handleCommentChange}
                             required/>
                         <div className='d-flex justify-content-end mb-3'>
+                        <div className="glow-container">
                             <Button
-                                className='ms-3 btn'
+                                className='ms-3 btn btn-form-elements glow-on-hover'
                                 variant='outline-success'
                                 onClick={handleClose}>
                                 Close
                             </Button>
+                        </div>
+                        <div className="glow-container">
                             <Button
                                 disabled={isFormDisabled}
                                 id='save-comment'
-                                className='ms-3'
+                                className='ms-3 btn-form-elements glow-on-hover'
                                 variant='outline-success'
                                 type='submit'
                                 onClick={handleSave}>
                                 Save Comment
                             </Button>
+                            </div>
                         </div>
                     </Form>
-                    <h4>Past Comments</h4>
+                    <h5 className='form-elements'>Past Comments</h5>
                     <div className='comments-section'>           
                     <CourseCommentsList commentList={commentList} courseId={courseId}/>
                     </div> 

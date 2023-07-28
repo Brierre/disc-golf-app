@@ -1,85 +1,5 @@
 [
     {
-        "holeNumber": "1",
-        "par": "3",
-        "distanceInFeet": "211",
-        "id": 1,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "2",
-        "par": "3",
-        "distanceInFeet": "178",
-        "id": 2,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "3",
-        "par": "3",
-        "distanceInFeet": "220",
-        "id": 3,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "4",
-        "par": "3",
-        "distanceInFeet": "199",
-        "id": 4,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "5",
-        "par": "3",
-        "distanceInFeet": "264",
-        "id": 5,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "6",
-        "par": "3",
-        "distanceInFeet": "208",
-        "id": 6,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "7",
-        "par": "3",
-        "distanceInFeet": "222",
-        "id": 7,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "8",
-        "par": "3",
-        "distanceInFeet": "160",
-        "id": 8,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "9",
-        "par": "3",
-        "distanceInFeet": "249",
-        "id": 9,
-        "courseId": "1"
-    },
-    {
-        "holeNumber": "1",
-        "par": "3",
-        "distanceInFeet": "160",
-        "id": 10,
-        "courseId": "2"
-    }
-]
-
-
-
-
-
-
-
-
-  [
-    {
         "id": "1",
         "parentId": "",
         "name": "Sedgley Woods",
@@ -91,7 +11,73 @@
         "location": "",
         "x": "39.98145385192595",
         "y": "-75.19107748176366",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+            {
+                "holeNumber": "1",
+                "par": "3",
+                "distanceInFeet": "211",
+                "id": 1,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "2",
+                "par": "3",
+                "distanceInFeet": "178",
+                "id": 2,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "3",
+                "par": "3",
+                "distanceInFeet": "220",
+                "id": 3,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "4",
+                "par": "3",
+                "distanceInFeet": "199",
+                "id": 4,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "5",
+                "par": "3",
+                "distanceInFeet": "264",
+                "id": 5,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "6",
+                "par": "3",
+                "distanceInFeet": "208",
+                "id": 6,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "7",
+                "par": "3",
+                "distanceInFeet": "222",
+                "id": 7,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "8",
+                "par": "3",
+                "distanceInFeet": "160",
+                "id": 8,
+                "courseId": "1"
+            },
+            {
+                "holeNumber": "9",
+                "par": "3",
+                "distanceInFeet": "249",
+                "id": 9,
+                "courseId": "1"
+            }
+        ],
+        "commentList": []
     },
     {
         "id": "2",
@@ -105,7 +91,17 @@
         "location": "",
         "x": "39.98145385192595",
         "y": "-75.19107748176366",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+            {
+                "holeNumber": "1",
+                "par": "3",
+                "distanceInFeet": "160",
+                "id": 10,
+                "courseId": "2"
+            }
+        ],
+        "commentList": []
     },
     {
         "id": "3",
@@ -119,7 +115,10 @@
         "location": "",
         "x": "39.98145385192595",
         "y": "-75.19107748176366",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     },
     {
         "id": "4",
@@ -133,7 +132,10 @@
         "location": "",
         "x": "39.98145385192595",
         "y": "-75.19107748176366",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     },
     {
         "id": "5",
@@ -147,7 +149,10 @@
         "location": "",
         "x": "39.98145385192595",
         "y": "-75.19107748176366",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     },
     {
         "id": "6",
@@ -161,7 +166,10 @@
         "location": "",
         "x": "",
         "y": "",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     },
     {
         "id": "7",
@@ -175,7 +183,10 @@
         "location": "",
         "x": "",
         "y": "",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     },
     {
         "id": "8",
@@ -189,6 +200,9 @@
         "location": "",
         "x": "",
         "y": "",
-        "numHoles": "9"
+        "numHoles": "9",
+        "holes": [
+        ],
+        "commentList": []
     }
 ]

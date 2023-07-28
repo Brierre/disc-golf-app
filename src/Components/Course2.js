@@ -1,11 +1,11 @@
 import React from 'react';
 import { NewHoleForm2 } from './NewHoleForm2.js';
 import CourseCommentsForm from './CourseCommentsForm.js';
+import CourseCommentsList from './CourseCommentsList.js';
 import frisbee from '../noun-frisbee-871431.png';
 
 export const Course2 = (props) => {
-    const { course, updateCourse } = props;
-    const commentList = [];
+    const { course, updateCourse, addComment } = props;
 
     const deleteHole = (holeId) => {
         const updatedHoles = course.holes.filter((hole) => hole.id !== holeId);
@@ -21,7 +21,7 @@ export const Course2 = (props) => {
         const nextId = maxId + 1;
 
         const newHole = {
-            _id: nextId,
+            id: nextId,
             holeNumber: hole.holeNumber,
             par: hole.par,
             distanceInFeet: hole.distanceInFeet,
@@ -37,7 +37,7 @@ export const Course2 = (props) => {
 
     const HolesComponent = () => (
         <ul className="holes-list">
-            {course.holes.map((hole, index) => (
+            {(course.holes || []).map((hole, index) => (
                 <li key={index}>
                     <label>{`Hole: ${hole.holeNumber} / Par: ${hole.par} / Distance: ${hole.distanceInFeet} feet`}</label>
                     <button className="frisbee" caption="delete" onClick={() => deleteHole(hole.id)}
@@ -75,8 +75,13 @@ export const Course2 = (props) => {
             <HolesComponent />
             <NewHoleForm2 addNewHole={addNewHole} course={course} />
             <CourseCommentsForm 
-                commentList={commentList}
+                commentList={course.commentList}
                 courseId={course.id}
+                addComment={addComment}
+            />
+            <CourseCommentsList 
+                commentList={course.commentList} 
+                courseId={course.id} 
             />
         </div>
     );

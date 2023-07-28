@@ -31,7 +31,8 @@ const CourseList = () => {
         };
         setCommentList([...commentList, newComment]);
     };
-
+    console.log('commentList:', commentList);
+    
     return (
         <div className="course-list">
             {courses.map((course) => (
@@ -48,52 +49,3 @@ const CourseList = () => {
 }
 
 export default CourseList;
-
-// export class CourseList extends React.Component {
-//     state = {
-//         courses: []
-//     };
-
-//     componentDidMount() {
-//         this.fetchCourses();
-//     };
-
-//     fetchCourses = async () => {
-//         const courses = await coursesAPI.get();  
-//         this.setState({ courses });  
-//     };
-
-//     updateCourse = async (updatedCourse) => {
-//         await coursesAPI.put(updatedCourse);
-//         this.fetchCourses();
-//     };
-
-//     render() {
-//         const [commentList, setCommentList] = useState(courseComments);
-//         const addComment = ({courseId, comment, author}) => {
-//             const nextId = Math.max(...commentList.map(comment => comment.commentId)) + 1;
-
-//             const newComment = {
-//                 courseId: courseId,
-//                 commentId: nextId,
-//                 comment: comment,
-//                 author: author
-//             };
-//             setCommentList([...commentList, newComment]);
-//         };
-
-//         return (
-//             <div className="course-list">
-//                 {this.state.courses.map((course) => (
-//                     <Course2
-//                         course={course}
-//                         key={course.id}
-//                         commentList={commentList}
-//                         addComment={addComment}
-//                         updateCourse={this.updateCourse} />
-//                 ))}
-//             </div>
-//         )
-//     }
-
-// }

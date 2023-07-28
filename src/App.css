@@ -145,8 +145,6 @@ html {
 
 /* Glowing effect styles */
 .glow-container .glow-on-hover {
-  width: 125px;
-  height: 25px;
   border: none;
   outline: none;
   color: white;
@@ -178,11 +176,11 @@ html {
 }
 
 .glow-container .glow-on-hover:active {
-  color: #1e271a;
+  color: white;
 }
 
 .glow-container .glow-on-hover:active:after {
-  background: transparent;
+  background-color: #66815b;
 }
 
 .glow-container .glow-on-hover:hover:before {
@@ -222,7 +220,6 @@ html {
 
 .btn-view-comments {
   background-color: #89b376;
-  outline-color: #89b376;
   color: white;
   margin-left: 10px;
 }
@@ -237,4 +234,25 @@ html {
 .form-elements {
 margin-left: 10px;
 border-radius: 5px;
+color: #4d6443;
+}
+
+.input-form-elements {
+  color: #4d6443;
+}
+
+.btn-form-elements {
+  background-color: #66815b;
+  outline-color: #66815b;
+  color: white;
+}
+
+.btn-form-elements:hover {
+  background-color:#4d6443;
+  outline-color: #4d6443;
+}
+
+.form-control:focus {
+  border-color: #4d6443;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
 }

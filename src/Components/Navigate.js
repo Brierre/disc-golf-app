@@ -22,24 +22,24 @@ function Navigate() {
                     <div className="collapse navbar-collapse" id="links-and-dd">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">
+                                <a className="nav-link" href="/">
                                     Home <span className="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="https://discgolfmetrix.com/?u=rule&ID=37" target="_blank">
+                                <a className="nav-link" href="https://discgolfmetrix.com/?u=rule&ID=37" target="_blank" rel="noreferrer">
                                     Course Data
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="https://github.com/Brierre/disc-golf-app/tree/refactored" target="_blank">
+                                <a className="nav-link" href="https://github.com/Brierre/disc-golf-app/tree/refactored" target="_blank" rel="noreferrer">
                                     GitHub Repo
                                 </a>
                             </li>
                             <li className="nav-item dropdown" id="navbarNavDropdown">
                                 <a
                                     className="nav-link dropdown-toggle"
-                                    href="#"
+                                    href="/"
                                     id="navbarDropdownMenuLink"
                                     data-toggle="dropdown"
                                     aria-haspopup="true"
@@ -47,13 +47,13 @@ function Navigate() {
                                         Dropdown link
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item" href="/">
                                         Do
                                     </a>
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item" href="/">
                                         Do Not
                                     </a>
-                                    <a className="dropdown-item disabled" href="#">
+                                    <a className="dropdown-item disabled" href="/">
                                         Try
                                     </a>
                                 </div>

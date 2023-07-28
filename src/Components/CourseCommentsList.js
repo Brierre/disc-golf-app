@@ -2,6 +2,8 @@ import React from 'react';
 import CourseComments from './CourseComments';
 
 const CourseCommentsList = ({ commentList, courseId }) => {
+    console.log('commentList:', commentList);
+    console.log('courseId:', courseId);
     return (
         <div>
             {commentList
