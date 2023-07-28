@@ -1,0 +1,194 @@
+[
+    {
+        "holeNumber": "1",
+        "par": "3",
+        "distanceInFeet": "211",
+        "id": 1,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "2",
+        "par": "3",
+        "distanceInFeet": "178",
+        "id": 2,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "3",
+        "par": "3",
+        "distanceInFeet": "220",
+        "id": 3,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "4",
+        "par": "3",
+        "distanceInFeet": "199",
+        "id": 4,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "5",
+        "par": "3",
+        "distanceInFeet": "264",
+        "id": 5,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "6",
+        "par": "3",
+        "distanceInFeet": "208",
+        "id": 6,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "7",
+        "par": "3",
+        "distanceInFeet": "222",
+        "id": 7,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "8",
+        "par": "3",
+        "distanceInFeet": "160",
+        "id": 8,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "9",
+        "par": "3",
+        "distanceInFeet": "249",
+        "id": 9,
+        "courseId": "1"
+    },
+    {
+        "holeNumber": "1",
+        "par": "3",
+        "distanceInFeet": "160",
+        "id": 10,
+        "courseId": "2"
+    }
+]
+
+
+
+
+
+
+
+
+  [
+    {
+        "id": "1",
+        "parentId": "",
+        "name": "Sedgley Woods",
+        "fullName": "Sedgley Woods",
+        "type": 1,
+        "countryCode": "US",
+        "area": "Philadelphia",
+        "city": "",
+        "location": "",
+        "x": "39.98145385192595",
+        "y": "-75.19107748176366",
+        "numHoles": "9"
+    },
+    {
+        "id": "2",
+        "parentId": "1",
+        "name": "Blue",
+        "fullName": "Sedgley Woods: Blue",
+        "type": "2",
+        "countryCode": "US",
+        "area": "Philadelphia",
+        "city": "",
+        "location": "",
+        "x": "39.98145385192595",
+        "y": "-75.19107748176366",
+        "numHoles": "9"
+    },
+    {
+        "id": "3",
+        "parentId": "1",
+        "name": "Yellow",
+        "fullName": "Sedgley Woods: Yellow",
+        "type": "2",
+        "countryCode": "US",
+        "area": "Philadelphia",
+        "city": "",
+        "location": "",
+        "x": "39.98145385192595",
+        "y": "-75.19107748176366",
+        "numHoles": "9"
+    },
+    {
+        "id": "4",
+        "parentId": "1",
+        "name": "Red",
+        "fullName": "Sedgley Woods: Red",
+        "type": "2",
+        "countryCode": "US",
+        "area": "Philadelphia",
+        "city": "",
+        "location": "",
+        "x": "39.98145385192595",
+        "y": "-75.19107748176366",
+        "numHoles": "9"
+    },
+    {
+        "id": "5",
+        "parentId": "1",
+        "name": "Mixed",
+        "fullName": "Sedgley Woods: Mixed",
+        "type": "2",
+        "countryCode": "US",
+        "area": "Philadelphia",
+        "city": "",
+        "location": "",
+        "x": "39.98145385192595",
+        "y": "-75.19107748176366",
+        "numHoles": "9"
+    },
+    {
+        "id": "6",
+        "parentId": "",
+        "name": "Schenley Park",
+        "fullName": "Schenley Park",
+        "type": "1",
+        "countryCode": "US",
+        "area": "Allegheny",
+        "city": "Pittsburgh",
+        "location": "",
+        "x": "",
+        "y": "",
+        "numHoles": "9"
+    },
+    {
+        "id": "7",
+        "parentId": "6",
+        "name": "Blue Tees",
+        "fullName": "Schenley Park: Blue Tees",
+        "type": "1",
+        "countryCode": "US",
+        "area": "Allegheny",
+        "city": "Pittsburgh",
+        "location": "",
+        "x": "",
+        "y": "",
+        "numHoles": "9"
+    },
+    {
+        "id": "8",
+        "parentId": "6",
+        "name": "White Tees",
+        "fullName": "Schenley Park: White Tees",
+        "type": "2",
+        "countryCode": "US",
+        "area": "Allegheny",
+        "city": "Pittsburgh",
+        "location": "",
+        "x": "",
+        "y": "",
+        "numHoles": "9"
+    }
+]

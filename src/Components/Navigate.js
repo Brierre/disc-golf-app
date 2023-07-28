@@ -6,9 +6,9 @@ function Navigate() {
         <div>
             <nav className="navbar navbar-expand-md" id="dg-nav">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
+                    <div className="navbar-brand" href="#">
                         <CircularNav />
-                    </a>
+                    </div>
                     <button
                         className="navbar-toggler"
                         type="button"

@@ -140,6 +140,7 @@ html {
 .glow-container {
   display: inline-block; /* or use block or flex, depending on your layout needs */
   position: relative;
+  margin-left: 10px;
 }
 
 /* Glowing effect styles */
@@ -217,4 +218,23 @@ html {
 .frisbee {
   margin-left: 10px;
   margin-bottom: 3px;
+}
+
+.btn-view-comments {
+  background-color: #89b376;
+  outline-color: #89b376;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn-view-comments:hover {
+  background-color: #66815b;
+  outline-color: #66815b;
+  color: white;
+  margin-left: 10px;
+}
+
+.form-elements {
+margin-left: 10px;
+border-radius: 5px;
 }
