@@ -20,25 +20,25 @@ const CircularNav = () => {
                             <a href="/"><HouseHeart /></a>
                         </li>
                         <li style={{ '--i': 2 }}>
-                            <a href="#"><PersonHeart /></a>
+                            <a href="/"><PersonHeart /></a>
                         </li>
                         <li style={{ '--i': 3 }}>
-                            <a href="#"><GearFill /></a>
+                            <a href="/"><GearFill /></a>
                         </li>
                         <li style={{ '--i': 4 }}>
-                            <a href="https://brierre.github.io/vocal-music-at-JSHS/" target="_blank"><MusicNoteBeamed /></a>
+                            <a href="https://brierre.github.io/vocal-music-at-JSHS/" target="_blank" rel="noreferrer"><MusicNoteBeamed /></a>
                         </li>
                         <li style={{ '--i': 5 }}>
-                            <a href="https://www.linkedin.com/in/heatherlhaigh/" target="_blank"><Linkedin /></a>
+                            <a href="https://www.linkedin.com/in/heatherlhaigh/" target="_blank" rel="noreferrer"><Linkedin /></a>
                         </li>
                         <li style={{ '--i': 6 }}>
-                            <a href="https://slack.com/" target="_blank"><Slack /></a>
+                            <a href="https://slack.com/" target="_blank" rel="noreferrer"><Slack /></a>
                         </li>
                         <li style={{ '--i': 7 }}>
-                            <a href="https://www.amazon.com/s?k=pdga+disc+golf&crid=3QARU0WYGIY5J&sprefix=p%2Caps%2C1776&ref=nb_sb_noss_2" target="_blank"><BagHeartFill /></a>
+                            <a href="https://www.amazon.com/s?k=pdga+disc+golf&crid=3QARU0WYGIY5J&sprefix=p%2Caps%2C1776&ref=nb_sb_noss_2" target="_blank" rel="noreferrer"><BagHeartFill /></a>
                         </li>
                         <li style={{ '--i': 8 }}>
-                            <a href="https://www.nespresso.com/us/en/vertuo-coffee-pods" target="_blank"><CupHotFill /></a>
+                            <a href="https://www.nespresso.com/us/en/vertuo-coffee-pods" target="_blank" rel="noreferrer"><CupHotFill /></a>
                         </li>
                         <li style={{ '--i': 9 }}><button id="circular-nav-button" className="toggle" onClick={handleToggle}><DiscFill /></button></li>
                     </ul>

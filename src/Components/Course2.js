@@ -1,38 +1,46 @@
 import React from 'react';
 import { NewHoleForm2 } from './NewHoleForm2.js';
+import CourseCommentsForm from './CourseCommentsForm.js';
+import CourseCommentsList from './CourseCommentsList.js';
 import frisbee from '../noun-frisbee-871431.png';
 
 export const Course2 = (props) => {
-    const { course, updateCourse } = props;
+    const { course, updateCourse, addComment } = props;
 
     const deleteHole = (holeId) => {
+        const updatedHoles = course.holes.filter((hole) => hole.id !== holeId);
         const updatedCourse = {
             ...course,
-            holes: course.holes.filter((hole) => hole._id !== holeId)
+            holes: updatedHoles,
         };
         updateCourse(updatedCourse);
-    }
+    };
 
     const addNewHole = (hole) => {
-        const maxId = course.holes.reduce((max, hole) => Math.max(max, hole._id), 0);
+        const maxId = course.holes.reduce((max, hole) => Math.max(max, hole.id), 0);
         const nextId = maxId + 1;
 
         const newHole = {
-            ...hole,
-            _id: nextId,
+            id: nextId,
+            holeNumber: hole.holeNumber,
+            par: hole.par,
+            distanceInFeet: hole.distanceInFeet,
             courseId: course.id,
-            //setId: nextId,
         };
-            
-        updateCourse({ ...course, holes: [...course.holes, newHole] });
+        
+        const updatedCourse = {
+            ...course, 
+            holes: [...course.holes, newHole] 
+        };
+        updateCourse(updatedCourse);
     };
 
     const HolesComponent = () => (
         <ul className="holes-list">
-            {course.holes.map((hole, index) => (
+            {(course.holes || []).map((hole, index) => (
                 <li key={index}>
                     <label>{`Hole: ${hole.holeNumber} / Par: ${hole.par} / Distance: ${hole.distanceInFeet} feet`}</label>
-                    <button className="frisbee" caption="delete" onClick={() => deleteHole(hole._id)}
+                    <button className="frisbee" caption="delete" onClick={() => deleteHole(hole.id)}
                         style={{
                             backgroundImage: `url(${frisbee})`,
                             backgroundSize: "cover",
@@ -61,11 +69,20 @@ export const Course2 = (props) => {
     return (
         <div className="course">
             <h3 className="course-info-name">{course.fullName}</h3>
-            <h4 className="course-info">Area: {course.area}</h4>
-            <h4 className="course-info">City: {course.city}</h4>
-            <h4 className="course-info">Number of holes in course: {course.numHoles}</h4>
+            <h5 className="course-info">Area: {course.area}</h5>
+            <h5 className="course-info">City: {course.city}</h5>
+            <h5 className="course-info">Number of holes in course: {course.numHoles}</h5>
             <HolesComponent />
             <NewHoleForm2 addNewHole={addNewHole} course={course} />
+            <CourseCommentsForm 
+                commentList={course.commentList}
+                courseId={course.id}
+                addComment={addComment}
+            />
+            <CourseCommentsList 
+                commentList={course.commentList} 
+                courseId={course.id} 
+            />
         </div>
     );
 };

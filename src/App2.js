@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CourseList } from './Components/CourseList.js';
+import CourseList from './Components/CourseList.js';
 import Navigate from './Components/Navigate.js';
 import discgolfimg from './pexels-kevin-burnell-15579187.jpg';
 import './App.css';
