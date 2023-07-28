@@ -7,11 +7,11 @@ class CoursesAPI {
             const data = await resp.json();
             console.log(data);
             return data;
-        } catch(e) {
+        } catch (e) {
             console.log('courses not retrieved', e);
         }
     }
-    
+
     put = async (course) => {
         try {
             const resp = await fetch(`${dg_courses_endpoint}/${course.id}`, {
@@ -22,7 +22,7 @@ class CoursesAPI {
                 body: JSON.stringify(course)
             });
             return await resp.json();
-        } catch(e) {
+        } catch (e) {
             console.log('courses not updated', e);
         }
     }

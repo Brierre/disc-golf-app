@@ -7,10 +7,10 @@ const CourseCommentsList = ({ commentList, courseId }) => {
     return (
         <div>
             {commentList
-                .filter(courseComment => courseComment.courseId === courseId)
+                .filter((courseComment) => courseComment.courseId === courseId)
                 .reverse()
-                .map(courseComment => (
-                    <CourseComments courseComment={courseComment} key={courseComment.courseId}/>
+                .map((courseComment) => (
+                    <CourseComments courseComment={courseComment} key={courseComment.commentId}/>
                 ))}
         </div>
     );

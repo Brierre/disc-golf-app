@@ -35,6 +35,11 @@ html {
   padding: 0px 0px 0px 10px;
 }
 
+.edit-hole {
+  margin-top: 10px;
+  padding: 0px 0px 0px 10px;
+}
+
 #dg-nav {
   border: solid 2px navy;
   padding: 10px;
