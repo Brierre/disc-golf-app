@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/disc-golf-app/static/css/main.d62ca9f9.css",
+    "main.js": "/disc-golf-app/static/js/main.221aa6aa.js",
+    "static/media/pexels-kevin-burnell-15579187.jpg": "/disc-golf-app/static/media/pexels-kevin-burnell-15579187.e456964b93ae73962b39.jpg",
+    "static/media/noun-frisbee-871431.png": "/disc-golf-app/static/media/noun-frisbee-871431.53c1497938d294e50bbf.png",
+    "index.html": "/disc-golf-app/index.html",
+    "main.d62ca9f9.css.map": "/disc-golf-app/static/css/main.d62ca9f9.css.map",
+    "main.221aa6aa.js.map": "/disc-golf-app/static/js/main.221aa6aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d62ca9f9.css",
+    "static/js/main.221aa6aa.js"
+  ]
+}
